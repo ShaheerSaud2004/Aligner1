@@ -33,7 +33,7 @@ It's for developers who like column-aligned code but don't want to hand-pad it, 
 
 - Python 3.9+ standard library only. There are no runtime dependencies.
 - A small line scanner (`aligner/scanner.py`) that tracks strings, block comments and bracket depth. Rules only consider *top-level* code, so `f(a=1)`, `"x = y"` and `# a = b` are never treated as assignments.
-- Tests use the standard library's `unittest`. GitHub Actions runs them on Python 3.9–3.13.
+- Tests use the standard library's `unittest`. GitHub Actions runs them on Python 3.10–3.13 (3.9 is supported but no longer available on GitHub's runners).
 
 ## Install
 
