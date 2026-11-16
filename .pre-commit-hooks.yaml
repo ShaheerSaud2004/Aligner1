@@ -1,0 +1,12 @@
+- id: aligner
+  name: aligner
+  description: Vertically align assignments, keys, trailing comments and Markdown tables.
+  entry: aligner --write --quiet
+  language: python
+  types_or: [python, javascript, ts, tsx, go, rust, c, c++, java, yaml, toml, json, markdown]
+- id: aligner-check
+  name: aligner (check only)
+  description: Fail if any file is not aligned, without changing it.
+  entry: aligner --check
+  language: python
+  types_or: [python, javascript, ts, tsx, go, rust, c, c++, java, yaml, toml, json, markdown]
